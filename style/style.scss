@@ -10,7 +10,8 @@ $seconGray: #e5e5e5;
 // GLOBAL
 
 html {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Nunito", sans-serif;
+    // font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 18px;
     line-height: 1.1;
@@ -18,6 +19,7 @@ html {
     background: $mainBlue;
 }
 .body {
+    scroll-behavior: smooth;
 }
 
 .container {
