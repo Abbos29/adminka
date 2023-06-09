@@ -1,0 +1,149 @@
+html {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.1;
+  color: #000;
+  background: #93cee6;
+}
+
+.container {
+  max-width: 90%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  background: #FFFFFF;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+}
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 0;
+}
+.header__money {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.header__money-item {
+  font-size: 22px;
+  line-height: 1.1;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.1;
+  color: #000;
+}
+
+.navbar {
+  position: fixed;
+  height: 100%;
+  width: 330px;
+  left: 0;
+  top: 0;
+  padding-top: 100px;
+  background: #e5e5e5;
+}
+.navbar__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.navbar__user {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.navbar__user-img {
+  width: 90px;
+  height: 90px;
+  background: #93cee6;
+  border-radius: 999px;
+}
+.navbar__user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.navbar__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.hero {
+  padding: 120px 0px 40px;
+  margin-left: 330px;
+}
+.hero__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.hero__top-box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.hero__top-inner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.hero__top-item {
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  background: #FFFFFF;
+  padding: 20px;
+}
+
+.grid {
+  padding-top: 50px;
+  display: grid;
+  gap: 20px 20px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "inner-1 inner-2" "inner-3 inner-2";
+}
+.grid .inner-1 {
+  grid-area: inner-1;
+}
+.grid .inner-2 {
+  grid-area: inner-2;
+}
+.grid .inner-3 {
+  grid-area: inner-3;
+}
+.grid__inner {
+  display: grid;
+}
+.grid .inner-1 {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 20px;
+}
+.grid .inner-1 .box {
+  height: 100px;
+}
+.grid .inner-2 {
+  align-self: stretch;
+}
+.grid .inner-3 .box {
+  height: 150px;
+}
+
+.box {
+  border-radius: 10px;
+  background: #FFFFFF;
+  padding: 20px;
+}/*# sourceMappingURL=style.css.map */
