@@ -112,6 +112,7 @@ html {
     }
     // .navbar__user-live
     &__user-live {
+        color: green;
     }
     // .navbar__menu
     &__menu {
@@ -166,6 +167,8 @@ html {
         border-radius: 10px;
         background: $mainWhite;
         padding: 20px;
+
+        box-shadow: 5px 5px 8px 0px rgba(34, 60, 80, 0.2);
     }
 }
 
@@ -191,11 +194,6 @@ html {
     .inner-1 {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px 20px;
-
-        .box {
-            height: 100px;
-        }
-
     }
     .inner-2 {
         align-self: stretch;
@@ -209,8 +207,52 @@ html {
 }
 
 
+
 .box {
     border-radius: 10px;
     background: $mainWhite;
     padding: 20px;
+
+    box-shadow: 5px 5px 8px 0px rgba(34, 60, 80, 0.2);
+
+    // .box__top
+    &__top {
+    }
+    // .box__top-title
+    &__top-title {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 1.1;
+
+        margin-bottom: 30px;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: $mainColor;
+        }
+    }
+    // .box__inner
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    &__inner-item {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        align-items: flex-end;
+    }
+    // .box__inner-text
+    &__inner-text {
+    }
+    // .box__inner-num
+    &__inner-num {
+    }
 }

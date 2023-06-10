@@ -80,6 +80,9 @@ html {
   flex-direction: column;
   gap: 6px;
 }
+.navbar__user-live {
+  color: green;
+}
 .navbar__menu {
   display: flex;
   flex-direction: column;
@@ -111,6 +114,7 @@ html {
   border-radius: 10px;
   background: #FFFFFF;
   padding: 20px;
+  box-shadow: 5px 5px 8px 0px rgba(34, 60, 80, 0.2);
 }
 
 .grid {
@@ -136,9 +140,6 @@ html {
   grid-template-columns: repeat(2, 1fr);
   gap: 20px 20px;
 }
-.grid .inner-1 .box {
-  height: 100px;
-}
 .grid .inner-2 {
   align-self: stretch;
 }
@@ -150,4 +151,32 @@ html {
   border-radius: 10px;
   background: #FFFFFF;
   padding: 20px;
+  box-shadow: 5px 5px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.box__top-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.1;
+  margin-bottom: 30px;
+  position: relative;
+}
+.box__top-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #000;
+}
+.box__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.box__inner-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: flex-end;
 }/*# sourceMappingURL=style.css.map */
