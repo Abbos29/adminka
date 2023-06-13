@@ -1,7 +1,9 @@
 // VARS
 
 $mainColor: #000;
-$mainBlue: #04346C;
+$mainBlue: #182838;
+$seconBlue: #142030;
+$lightBlue: #194E84;
 $mainWhite: #FFFFFF;
 $mainGray: #e7ecf2;
 $seconGray: #e5e5e5;
@@ -89,7 +91,8 @@ input:checked[type="checkbox"]::after {
 // HEADER
 
 .header {
-    background: $mainWhite;
+    background: $lightBlue;
+    color: $mainWhite;
     position: fixed;
     top: 0;
     left: 0;
@@ -141,7 +144,7 @@ input:checked[type="checkbox"]::after {
     font-weight: 600;
     font-size: 24px;
     line-height: 1.1;
-    color: $mainColor;
+    color: $mainWhite;
 }
 
 // .burger
@@ -182,7 +185,7 @@ input:checked[type="checkbox"]::after {
         position: absolute;
         height: 2px;
         width: 100%;
-        background: #000;
+        background: $mainWhite;
         transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
     }
 
@@ -199,7 +202,7 @@ input:checked[type="checkbox"]::after {
         top: 9px;
         right: 0;
         width: 100%;
-        background: #000;
+        background: $mainWhite;
         height: 2px;
         transform: scale(1);
         transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
@@ -216,12 +219,14 @@ input:checked[type="checkbox"]::after {
     left: 0;
     top: 0;
     padding-top: 100px;
-    // background: $seconGray;
-    background: rgb(185,191,199);
-    background: linear-gradient(180deg, rgba(185,191,199,1) 0%, rgba(229,229,229,1) 35%);
+    background: $mainBlue;
+    // background: rgb(185,191,199);
+    // background: linear-gradient(180deg, rgba(185,191,199,1) 0%, rgba(229,229,229,1) 35%);
     box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 
     transition: all .4s;
+
+    color: $mainWhite;
 
     @media (max-width: 768px) {
         width: 260px;
@@ -247,7 +252,7 @@ input:checked[type="checkbox"]::after {
     &__user-img {
         width: 90px;
         height: 90px;
-        background: $mainBlue;
+        background: $mainGray;
         border-radius: 999px;
     }
     // .navbar__user-info
@@ -270,11 +275,33 @@ input:checked[type="checkbox"]::after {
     &__menu {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        gap: 15px;
+        // align-items: flex-start;
+        gap: 4px;
     }
     // .navbar__menu-item
     &__menu-item {
+        color: $mainWhite;
+        padding: 12px;
+        font-size: 15px;
+
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        background: $seconBlue;
+
+        transition: transform .3s ease;
+        img {
+            transition: transform .3s ease;
+            transform: rotate(-90deg);
+        }
+
+        &:hover {
+            transition: transform .3s ease;
+            img {
+                transform: rotate(-90deg) translateY(10px);
+            }
+        }
     }
 }
 
@@ -470,7 +497,7 @@ input:checked[type="checkbox"]::after {
 .account {
     // .account__grid
     &__grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
     // .account__list
     &__list {
@@ -480,7 +507,37 @@ input:checked[type="checkbox"]::after {
     &__list-item {
         display: block;
     }
+
+    &__btn {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        max-width: 160px;
+        width: 100%;
+        padding: 12px;
+        font-size: 20px;
+        border-radius: 10px;
+        background: $lightBlue;
+        color: $mainWhite;
+        margin-top: 14px;
+        
+        transition: all .3s;
+        &:hover {
+            background: $mainBlue;
+        }
+    }
 }
+
+// SEND
+
+.send {
+
+    &__grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 
 
 // SETTINGS
@@ -530,5 +587,30 @@ input:checked[type="checkbox"]::after {
 
     &__link {
         color: inherit;
+    }
+}
+
+
+// USERS
+
+.users {
+
+    &__grid {
+        grid-template-columns: 1fr;
+    }
+
+    &__inner {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px 20px;
+
+        @media (max-width: 960px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        @media (max-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media (max-width: 480px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
     }
 }
