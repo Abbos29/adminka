@@ -86,6 +86,10 @@ input:checked[type="checkbox"]::after {
     }
 }
 
+.scroll-lock {
+    overflow: hidden;
+}
+
 
 
 // HEADER
@@ -346,6 +350,10 @@ input:checked[type="checkbox"]::after {
         font-weight: 700;
         font-size: 35px;
         line-height: 1.1;
+
+        @media (max-width: 480px) {
+            font-size: 30px;
+        }
     }
     &__top-inner {
         display: flex;
@@ -453,6 +461,10 @@ input:checked[type="checkbox"]::after {
             height: 2px;
             background: $mainColor;
         }
+
+        @media (max-width: 480px) {
+            font-size: 22px;
+        }
     }
     &__top-link {
         display: flex;
@@ -498,6 +510,10 @@ input:checked[type="checkbox"]::after {
     // .account__grid
     &__grid {
         grid-template-columns: 1fr 1fr;
+
+        @media (max-width: 480px) {
+            grid-template-columns: 1fr;
+        }
     }
     // .account__list
     &__list {

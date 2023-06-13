@@ -23,10 +23,31 @@ window.addEventListener('resize', toggleHeroClass);
 toggleHeroClass();
 
 
+
+
+
+const burgerEl = document.querySelector('.burger');
+const mainBodyEl = document.querySelector('.main__body');
+
+// Функция, добавляющая класс при клике на бургер при условии, что ширина экрана меньше 768 пикселей
+function handleBurgerClick() {
+  if (window.innerWidth < 768) {
+    mainBodyEl.classList.toggle('scroll-lock');
+  }
+}
+
+// Назначаем обработчик клика на бургер
+burgerEl.addEventListener('click', handleBurgerClick);
+
+
+
+
+
+
 document.querySelector('.burger').addEventListener('click', function() {
-    document.querySelector('.hero').classList.toggle('active');
-    document.querySelector('.navbar').classList.toggle('active');
-    document.querySelector('.burger').classList.toggle('active-burger');
+  document.querySelector('.hero').classList.toggle('active');
+  document.querySelector('.navbar').classList.toggle('active');
+  document.querySelector('.burger').classList.toggle('active-burger');
 });
 
 
