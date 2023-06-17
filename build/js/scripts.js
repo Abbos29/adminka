@@ -1,3 +1,4 @@
+// Custom Scripts
 // Получаем элемент, которому нужно добавить класс
 const hero = document.querySelector('.hero');
 const navbar = document.querySelector('.navbar');
@@ -49,6 +50,7 @@ document.querySelector('.burger').addEventListener('click', function() {
   document.querySelector('.navbar').classList.toggle('active');
   document.querySelector('.burger').classList.toggle('active-burger');
 });
+
 
 
 
