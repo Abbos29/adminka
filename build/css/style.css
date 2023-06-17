@@ -215,6 +215,10 @@ html {
   scroll-behavior: smooth;
 }
 
+input {
+  font-family: "Nunito", sans-serif;
+}
+
 input[type=text] {
   font-family: "Nunito", sans-serif;
   font-size: 18px;
@@ -431,22 +435,26 @@ input:checked[type=checkbox]::after {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 40px;
+  gap: 20px;
 }
 
 .navbar__user {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 20px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
 }
 
 .navbar__user-img {
-  width: 90px;
-  height: 90px;
+  min-width: 70px;
+  min-height: 70px;
   background: #e7ecf2;
   border-radius: 999px;
 }
@@ -459,7 +467,19 @@ input:checked[type=checkbox]::after {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   gap: 6px;
+}
+
+.navbar__user-info a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.navbar__user-info a:hover {
+  text-decoration: none;
 }
 
 .navbar__user-live {
@@ -692,6 +712,12 @@ input:checked[type=checkbox]::after {
   line-height: 1.1;
 }
 
+.box__inner-link {
+  text-decoration: underline;
+  color: inherit;
+  color: #194E84;
+}
+
 .box__input {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -739,6 +765,17 @@ input:checked[type=checkbox]::after {
   background: #182838;
 }
 
+.account .box__inner-item {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.account .box__inner-num {
+  margin-left: auto;
+  text-align: right;
+}
+
 .send__grid {
   grid-template-columns: 1fr;
 }
@@ -769,6 +806,40 @@ input:checked[type=checkbox]::after {
 .users__inner {
   grid-template-columns: repeat(4, 1fr);
   gap: 20px 20px;
+}
+
+.users__search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+  padding: 10px 0;
+}
+
+.users__search-inner {
+  padding-top: 10px;
+}
+
+.users__search-inner label {
+  margin-right: 12px;
+}
+
+.users__search-input {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+}
+
+.users__search-submit {
+  cursor: pointer;
+  background: #194E84;
+  color: #FFFFFF;
+  width: auto;
+  padding: 10px;
 }
 
 @media (min-width: 1440px) {
