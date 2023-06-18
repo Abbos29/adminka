@@ -98,7 +98,7 @@
 </div>
 
 <!-- Hero-send -->
-<div class="hero accout">
+<div class="hero accout send">
     <div class="container">
         <div class="hero__wrapper">
             <div class="hero__top">
@@ -120,30 +120,39 @@
                         <div class="box__top">
                             <p class="box__top-title">Данные</p>
                         </div>
+                        <!-- <ul class="box__inner account__list">
+                            <li class="box__inner-item account__list-item">
+                                <div class="box__input">
+                                    <p class="box__input-title">Текст</p>
+                                    <input type="text">
+                                </div>
+                            </li>
+                        </ul> -->
+
                         <ul class="box__inner account__list">
+                            <select class="box__select" id="boxSelect">
+                                <option value="option1">Текст</option>
+                                <option value="option2">Фото</option>
+                                <option value="option3">GIF</option>
+                            </select>
+
                             <li class="box__inner-item account__list-item">
+
                                 <div class="box__input">
                                     <p class="box__input-title">Текст</p>
-                                    <input type="text">
+                                    <input type="textarea" row="5"></input>
                                 </div>
-                            </li>
-                            <li class="box__inner-item account__list-item">
+
                                 <div class="box__input">
-                                    <p class="box__input-title">Текст</p>
-                                    <input type="text">
+                                    <p class="box__input-title">Фото</p>
+                                    <input type="file" accept="image/*">
                                 </div>
-                            </li>
-                            <li class="box__inner-item account__list-item">
+
                                 <div class="box__input">
-                                    <p class="box__input-title">Текст</p>
-                                    <input type="text">
+                                    <p class="box__input-title">GIF</p>
+                                    <input type="file" accept="image/gif">
                                 </div>
-                            </li>
-                            <li class="box__inner-item account__list-item">
-                                <div class="box__input">
-                                    <p class="box__input-title">Текст</p>
-                                    <input type="text">
-                                </div>
+
                             </li>
                         </ul>
 
