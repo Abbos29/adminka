@@ -732,14 +732,15 @@ input:checked[type=checkbox]::after {
 .box__select {
   max-width: 200px;
   width: 100%;
-  padding: 8px;
+  font-size: 18px;
+  padding: 15px;
   border-radius: 6px;
   border: 1px solid #000;
   margin-bottom: 10px;
 }
 
 .account__grid {
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
 }
 
 .account__list-item {
@@ -774,6 +775,10 @@ input:checked[type=checkbox]::after {
   background: #182838;
 }
 
+.account .box__inner {
+  gap: 20px 20px;
+}
+
 .account .box__inner-item {
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -786,7 +791,7 @@ input:checked[type=checkbox]::after {
 }
 
 .send__grid {
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
 }
 
 .send .box__input {
@@ -807,7 +812,8 @@ input:checked[type=checkbox]::after {
 .send input[type=textarea] {
   max-width: 100%;
   width: 100%;
-  padding: 8px;
+  font-size: 18px;
+  padding: 15px;
   border-radius: 6px;
   border: 1px solid #000;
 }
@@ -954,6 +960,12 @@ input:checked[type=checkbox]::after {
     gap: 15px 15px;
   }
 
+  .account .box__inner-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 8px;
+  }
+
   .users__inner {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -982,6 +994,15 @@ input:checked[type=checkbox]::after {
 
   .account__grid {
     grid-template-columns: 1fr;
+  }
+
+  .account .box__inner-item {
+    grid-template-columns: 1fr;
+  }
+
+  .account .box__inner-num {
+    text-align: left;
+    margin-left: 0;
   }
 
   .users__inner {

@@ -98,7 +98,7 @@
 </div>
 
 <!-- Hero-send -->
-<div class="hero accout send">
+<div class="hero account send">
     <div class="container">
         <div class="hero__wrapper">
             <div class="hero__top">
@@ -118,7 +118,7 @@
                 <div class="grid__inner inner-1">
                     <div class="box">
                         <div class="box__top">
-                            <p class="box__top-title">Данные</p>
+                            <!-- <p class="box__top-title">Данные</p> -->
                         </div>
                         <!-- <ul class="box__inner account__list">
                             <li class="box__inner-item account__list-item">
@@ -130,18 +130,27 @@
                         </ul> -->
 
                         <ul class="box__inner account__list">
-                            <select class="box__select" id="boxSelect">
+                            <textarea name="editor1"></textarea>
+                            <script src="/ckeditor/ckeditor.js"></script>
+                            <script>
+                                CKEDITOR.replace("editor1", {
+                                    width: "100%",
+                                    language: "ru"
+                                });
+                            </script>
+
+                            <!-- <select class="box__select" id="boxSelect">
                                 <option value="option1">Текст</option>
                                 <option value="option2">Фото</option>
                                 <option value="option3">GIF</option>
-                            </select>
+                            </select> -->
 
                             <li class="box__inner-item account__list-item">
 
-                                <div class="box__input">
+                                <!-- <div class="box__input">
                                     <p class="box__input-title">Текст</p>
                                     <input type="textarea" row="5"></input>
-                                </div>
+                                </div> -->
 
                                 <div class="box__input">
                                     <p class="box__input-title">Фото</p>
