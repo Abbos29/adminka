@@ -54,3 +54,8 @@ document.querySelector('.burger').addEventListener('click', function() {
 
 
 
+
+CKEDITOR.replace("editor1", {
+  width: "100%",
+  language: "ru"
+});
