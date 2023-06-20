@@ -131,13 +131,7 @@
 
                         <ul class="box__inner account__list">
                             <textarea name="editor1"></textarea>
-                            <script src="/ckeditor/ckeditor.js"></script>
-                            <script>
-                                CKEDITOR.replace("editor1", {
-                                    width: "100%",
-                                    language: "ru"
-                                });
-                            </script>
+                            
 
                             <!-- <select class="box__select" id="boxSelect">
                                 <option value="option1">Текст</option>
@@ -182,6 +176,15 @@
 
 
 </body>
+
+<script src="../ckeditor/ckeditor.js"></script>
+<script>
+CKEDITOR.replace("editor1", {
+    width: "100%",
+    language: "ru"
+});
+</script>
+
 
 <script src="./js/scripts.min.js"></script>
 
