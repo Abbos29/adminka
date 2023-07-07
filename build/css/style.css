@@ -369,6 +369,46 @@ input:checked[type=checkbox]::after {
   background: #89898D;
 }
 
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.pagination__item {
+  font-size: 18px;
+  padding: 8px;
+  margin-right: 5px;
+  text-decoration: none;
+  color: #000;
+  border: 1px solid #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.pagination__item.active {
+  background-color: #ccc;
+}
+
+.pagination__item:hover {
+  background-color: #ccc;
+}
+
 #checkfr_1,
 #checkdv_1 {
   display: none !important;
@@ -1232,6 +1272,100 @@ input:checked[type=checkbox]::after {
   padding: 10px;
 }
 
+.contact-form {
+  max-width: 100%;
+  min-width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 30px;
+}
+
+input[type=text],
+textarea {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  outline: none;
+  max-width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #194E84;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  border-radius: 0px;
+}
+
+input[type=text]::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #000;
+}
+
+input[type=text]::-moz-placeholder, textarea::-moz-placeholder {
+  color: #000;
+}
+
+input[type=text]:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: #000;
+}
+
+input[type=text]::-ms-input-placeholder, textarea::-ms-input-placeholder {
+  color: #000;
+}
+
+input[type=text]::placeholder,
+textarea::placeholder {
+  color: #000;
+}
+
+input[type=text]:focus,
+textarea:focus {
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+button[type=submit] {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  padding: 15px 15px;
+  background: #194E84;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+button[type=submit]:hover {
+  color: #FFF;
+}
+
+button[type=submit]:active {
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  top: 3px;
+}
+
+button[type=submit]:focus {
+  position: relative;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  outline: none;
+}
+
+.login__wrapper {
+  display: grid;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 20px;
+}
+
 @media (max-width: 1449.98px) {
   .new__grid {
     grid-template-columns: 1fr 1fr;
@@ -1332,6 +1466,10 @@ input:checked[type=checkbox]::after {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+
+  .login__wrapper {
+    grid-template-columns: 1fr;
   }
 }
 

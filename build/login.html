@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Расс">
+    <meta name="description" content="Adminka">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Рассыслка</title>
+    <title>Login</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -102,77 +102,47 @@
     </div>
 </div>
 
-<!-- Hero-send -->
-<div class="hero account send">
+<!-- Login -->
+<section class="login hero">
     <div class="container">
-        <div class="hero__wrapper">
-            <div class="hero__top">
-                <div class="hero__top-box">
-                    <p class="hero__top-title">Hi Nickname, Welcome back</p>
-                    <p class="hero__top-pretitle">Отправить рассылку</p>
+        
+
+
+        <div class="login__wrapper">
+            <div class="box">
+                <div class="box__top">
+                    <p class="box__top-title">Войти</p>
                 </div>
-    
-                <!-- <div class="hero__top-inner">
-                    <div class="hero__top-item"></div>
-    
-                    <div class="hero__top-item"></div>
-                </div> -->
-            </div>
-    
-            <div class="grid send__grid">
-                <div class="grid__inner inner-1">
-                    <div class="box">
-                        <div class="box__top">
-                            <!-- <p class="box__top-title">Данные</p> -->
-                        </div>
-                        <!-- <ul class="box__inner account__list">
-                            <li class="box__inner-item account__list-item">
-                                <div class="box__input">
-                                    <p class="box__input-title">Текст</p>
-                                    <input type="text">
-                                </div>
-                            </li>
-                        </ul> -->
 
-                        <ul class="box__inner account__list">
-                            <textarea name="editor1"></textarea>
-                            
+                <form class="contact-form" id="contact-form" method="post" action="" onsubmit="return validate_form ( );">
+                    <input name="email" type="text" placeholder="Email" required/>
 
-                            <!-- <select class="box__select" id="boxSelect">
-                                <option value="option1">Текст</option>
-                                <option value="option2">Фото</option>
-                                <option value="option3">GIF</option>
-                            </select> -->
+                    <input name="password" type="text" placeholder="Password" required/>
 
-                            <li class="box__inner-item account__list-item">
+                    <button type="submit">Войти</button>
+                </form>
 
-                                <!-- <div class="box__input">
-                                    <p class="box__input-title">Текст</p>
-                                    <input type="textarea" row="5"></input>
-                                </div> -->
-
-                                <div class="box__input">
-                                    <p class="box__input-title">Фото</p>
-                                    <input type="file" accept="image/*">
-                                </div>
-
-                                <div class="box__input">
-                                    <p class="box__input-title">GIF</p>
-                                    <input type="file" accept="image/gif">
-                                </div>
-
-                            </li>
-                        </ul>
-
-                        <a class="account__btn" href="#">Отправить</a>
-                    </div>
-
-                </div>
             </div>
 
+            <div class="box">
+                <div class="box__top">
+                    <p class="box__top-title">Зарегистрироваться</p>
+                </div>
+                
+                <form class="contact-form" id="contact-form" method="post" action="" onsubmit="return validate_form ( );">
+                    <input name="name" type="text" placeholder="Name" required/>
+                    
+                    <input name="email" type="text" placeholder="Email" required/>
+
+                    <input name="password" type="text" placeholder="Password" required/>
+
+                    <button type="submit">Зарегистрироваться</button>
+                </form>
+
+            </div>
         </div>
     </div>
-</div>
+</section>
 
 
 </main>
@@ -182,17 +152,8 @@
 
 </body>
 
-
-<script src="./ckeditor/ckeditor.js"></script>
 <script src="./js/scripts.min.js"></script>
 
-<script>
-// CKEDITOR
-CKEDITOR.replace("editor1", {
-  width: "100%",
-  language: "ru"
-});
 
-</script>
 
 </html>
