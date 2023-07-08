@@ -999,6 +999,12 @@ input:checked[type=checkbox]::after {
   margin-top: 50px;
 }
 
+.promo__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr !important;
+  gap: 20px 20px;
+}
+
 .grid {
   padding-top: 30px;
   display: grid;
@@ -1251,7 +1257,7 @@ input:checked[type=checkbox]::after {
 }
 
 .users__search-inner {
-  padding-top: 10px;
+  padding: 10px 0;
 }
 
 .users__search-inner label {
@@ -1260,7 +1266,7 @@ input:checked[type=checkbox]::after {
 
 .users__search-input {
   width: 100%;
-  max-width: 300px;
+  max-width: 300px !important;
   padding: 10px;
 }
 
@@ -1371,6 +1377,10 @@ button[type=submit]:focus {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "box-1 box-2" "box-3 box-3" "box-4 box-4" "box-5 box-5";
   }
+
+  .promo__grid {
+    grid-template-columns: 1fr 1fr 1fr !important;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -1391,6 +1401,10 @@ button[type=submit]:focus {
   .new__grid {
     grid-template-columns: 1fr;
     grid-template-areas: "box-1" "box-2" "box-3" "box-4" "box-5";
+  }
+
+  .promo__grid {
+    grid-template-columns: 1fr 1fr !important;
   }
 }
 
@@ -1503,5 +1517,11 @@ button[type=submit]:focus {
 
   .users__inner {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 479.98px) {
+  .promo__grid {
+    grid-template-columns: 1fr !important;
   }
 }
